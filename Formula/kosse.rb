@@ -3,8 +3,8 @@
 class Kosse < Formula
   desc "Menu-bar app and local dashboard for the development services you already run"
   homepage "https://github.com/davidpp/kosse"
-  url "https://github.com/davidpp/kosse/releases/download/v0.1.1/kosse-0.1.1-aarch64-apple-darwin.tar.gz"
-  sha256 "46ab73f2a58840f953ec8774c3129bc51af5ce4e44b96a84535ebd22ace43c7f"
+  url "https://github.com/davidpp/kosse/releases/download/v0.2.0/kosse-0.2.0-aarch64-apple-darwin.tar.gz"
+  sha256 "defcc6e1baa1846cc63e08ec87c74c7b3bc6b5d0d4310ec703ddb6b99d876b29"
   license "MIT"
 
   depends_on arch: :arm64
@@ -12,7 +12,7 @@ class Kosse < Formula
 
   def install
     bin.install "kosse"
-    doc.install "INSTALL.md", "MANIFEST.json", "THIRD_PARTY_NOTICES.md"
+    doc.install "INSTALL.md", "MANIFEST.json", "SKILL.md", "THIRD_PARTY_NOTICES.md"
   end
 
   def caveats
