@@ -4,8 +4,6 @@ class Kosse < Formula
   desc "Menu-bar app and local dashboard for the development services you already run"
   homepage "https://github.com/davidpp/kosse"
   url "https://github.com/davidpp/kosse/releases/download/v0.1.1/kosse-0.1.1-aarch64-apple-darwin.tar.gz"
-  # Explicit because the URL is a placeholder (or any host's path) Homebrew cannot parse it from.
-  version "0.1.1"
   sha256 "46ab73f2a58840f953ec8774c3129bc51af5ce4e44b96a84535ebd22ace43c7f"
   license "MIT"
 
