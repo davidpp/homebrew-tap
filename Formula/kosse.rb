@@ -1,0 +1,33 @@
+# Generated from packaging/homebrew/kosse.rb.tmpl in https://github.com/davidpp/kosse for exactly
+# one release archive; that repository's release workflow commits it here. Edit the template there.
+class Kosse < Formula
+  desc "Menu-bar app and local dashboard for the development services you already run"
+  homepage "https://github.com/davidpp/kosse"
+  url "https://github.com/davidpp/kosse/releases/download/v0.1.1/kosse-0.1.1-aarch64-apple-darwin.tar.gz"
+  # Explicit because the URL is a placeholder (or any host's path) Homebrew cannot parse it from.
+  version "0.1.1"
+  sha256 "46ab73f2a58840f953ec8774c3129bc51af5ce4e44b96a84535ebd22ace43c7f"
+  license "MIT"
+
+  depends_on arch: :arm64
+  depends_on :macos
+
+  def install
+    bin.install "kosse"
+    doc.install "INSTALL.md", "MANIFEST.json", "THIRD_PARTY_NOTICES.md"
+  end
+
+  def caveats
+    <<~EOS
+      To start the menu-bar app at each login (optional), enable it from the linked path, not
+      the versioned Cellar path, so upgrades keep working:
+        #{HOMEBREW_PREFIX}/bin/kosse startup enable
+      Before `brew uninstall kosse`, run `kosse startup disable` if you enabled it.
+    EOS
+  end
+
+  test do
+    assert_equal "kosse #{version}", shell_output("#{bin}/kosse --version").strip
+    system bin/"kosse", "config", "schema"
+  end
+end
