@@ -3,8 +3,8 @@
 class Kosse < Formula
   desc "Menu-bar app and local dashboard for the development services you already run"
   homepage "https://github.com/davidpp/kosse"
-  url "https://github.com/davidpp/kosse/releases/download/v0.2.0/kosse-0.2.0-aarch64-apple-darwin.tar.gz"
-  sha256 "defcc6e1baa1846cc63e08ec87c74c7b3bc6b5d0d4310ec703ddb6b99d876b29"
+  url "https://github.com/davidpp/kosse/releases/download/v0.2.1/kosse-0.2.1-aarch64-apple-darwin.tar.gz"
+  sha256 "6a0af0369eb9b6ba106c4445056a4d149e29e85dc9e1a6841d646bfe493b752c"
   license "MIT"
 
   depends_on arch: :arm64
