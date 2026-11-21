@@ -3,28 +3,28 @@
 class Kabane < Formula
   desc "Local-first issue tracker and kanban for humans and AI agent runtimes"
   homepage "https://github.com/davidpp/kabane"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/davidpp/kabane/releases/download/v1.0.1/kabane-darwin-arm64.tar.gz"
-      sha256 "07e2c7cd91e54474488c565b1d927e9f07f01e3545670507d9532c77519a9b2e"
+      url "https://github.com/davidpp/kabane/releases/download/v1.1.0/kabane-darwin-arm64.tar.gz"
+      sha256 "fa3c9332a1879d118c113fac70a5058d9dffbb65f6b27bc82eb8ae5778c7b39a"
     end
     on_intel do
-      url "https://github.com/davidpp/kabane/releases/download/v1.0.1/kabane-darwin-x64.tar.gz"
-      sha256 "10e261d3614bc939c9e0f2035354e42fedc2894342878af0a2f03a6d6d69d8d8"
+      url "https://github.com/davidpp/kabane/releases/download/v1.1.0/kabane-darwin-x64.tar.gz"
+      sha256 "f0ddaaa567dafb73400019de0adfa0d8390ab44eff7c486cc3b0ede1a17f9cf2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/davidpp/kabane/releases/download/v1.0.1/kabane-linux-arm64.tar.gz"
-      sha256 "b846b9827ba17dceb22b3cec034de7cad26e38ceb8c4c0263e7dc78ad15e1468"
+      url "https://github.com/davidpp/kabane/releases/download/v1.1.0/kabane-linux-arm64.tar.gz"
+      sha256 "bb7649fbded696ccee5e77c1244483ece06bf50296fa560e7fc31ea14043b743"
     end
     on_intel do
-      url "https://github.com/davidpp/kabane/releases/download/v1.0.1/kabane-linux-x64.tar.gz"
-      sha256 "27633e87b64715958231cee0fdecc4d617d5052911c0f1ec74dc744dcd4ac4b6"
+      url "https://github.com/davidpp/kabane/releases/download/v1.1.0/kabane-linux-x64.tar.gz"
+      sha256 "f019dad0856ba8101da687ba7850eb1b0c2262e9730b1b1283fff4c0ac3533eb"
     end
   end
 
